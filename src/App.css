@@ -1,0 +1,112 @@
+/* General app styles */
+.App {
+  text-align: center;
+}
+
+/* Styles for the app header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Container for the main app content */
+.app-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: rgb(18, 18, 18);
+}
+
+/* Styling for the categories section */
+.categories-container {
+  flex: 0 0 200px;
+  padding: 10px;
+  background-color: rgb(30, 30, 30);
+  color: #ffffff;
+  border: 1px solid #000000;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+/* Hover effect for category list items */
+.categories-container li:hover {
+  cursor: pointer;
+}
+
+/* Removes default list styling */
+.categories-container ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+/* Styling for the items section */
+.items-container {
+  flex: 3;
+  padding: 10px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .categories-container, .items-container {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* Styles for items in the items container */
+.items-container .item {
+  margin-bottom: 20px;
+}
+
+.items-container .item h3 {
+  margin: 0;
+  color: #333;
+}
+
+.items-container .item p {
+  font-style: italic;
+  color: #666;
+}
+
+/* Styling for the placeholder container */
+.placeholder-container {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.placeholder-container h2 {
+  margin-top: 20px;
+}
+
+.placeholder-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* General body styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for selected category */
+.selected-category {
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+  border-radius: 5px;
+}
